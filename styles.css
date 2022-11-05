@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+
+/* Primary */
+
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+
+/* Neutral */
+
+--very-dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--very-light-gray: hsl(0, 0%, 98%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--very-light-gray);
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 95%;
+    padding: 0 1rem 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top{
+    font-weight: 200;
+    color: var(--very-dark-blue);
+    margin: 4rem 0 0 0;
+    text-align: center;
+}
+
+.header-bottom{
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--grayish-blue);
+    font-weight: 200;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.description{
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    padding: 0 5%;
+}
+
+h2{
+    font-weight: 400;
+    color: var(--very-dark-blue);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.card{
+    padding: 1.5rem 0.25rem 1.5rem 0.25rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.5rem 1rem 0.1rem rgba(76, 78, 97, 0.15);
+    margin: 2rem  0 2rem 0;
+    width: 100%;
+}
+
+.card .text{
+    margin: 0 1rem 0 1rem;
+    text-align: left;
+}
+
+.card img{
+    display: -webkit-box;
+    margin-left: auto;
+    margin-right: 1.5rem;
+    max-width: 20%;
+}
+
+.card1{
+    border-top: 0.25rem solid var(--cyan);
+}
+
+.card2{
+    border-top: 0.25rem solid var(--red);
+}
+
+.card3{
+    border-top: 0.25rem solid var(--orange);
+}
+
+.card4{
+    border-top: 0.25rem solid var(--blue);
+    margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    h1{
+        font-size: 2rem;
+    }
+
+    .description{
+        margin: 0 10%;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 8rem;
+    }
+    
+    .flex-top-bottom{
+        margin: 0 3rem;
+        width: 100%;
+    }
+}
